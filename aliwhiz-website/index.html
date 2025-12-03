@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ali Whiz — JUNAKI &amp; D3</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="Ali Whiz — Trusted egg brands. JUNAKI (affordable) and D3 (premium, chemical-free, FSSAI tested).">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+    <div class="brand">
+  <img src="images/ali-whiz-logo.png.jpg" alt="Ali Whiz" class="brand-logo">
+  <div class="brand-text">
+    <div class="brand-name">ALI WHIZ</div>
+    <div class="brand-sub">Under the house of ALI WHIZ</div>
+  </div>
+</div>
+
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#brands">Brands</a></li>
+          <li><a href="#compare">Compare</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button id="navToggle" class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileNav" class="mobile-nav" aria-hidden="true">
+      <div class="mobile-inner">
+        <button id="navClose" class="nav-close" aria-label="Close menu">✕</button>
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#brands" class="mobile-link">Brands</a>
+        <a href="#compare" class="mobile-link">Compare</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">Fresh • Hygienic • Reliable</div>
+          <h1>Ali Whiz egg brands for households and retailers</h1>
+          <p class="lead">
+            Supplying fresh eggs with clear quality tiers —
+            <strong>JUNAKI</strong> for everyday affordability and
+            <strong>D3</strong> for premium, chemical-free eggs (FSSAI lab tested).
+          </p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="#contact">Contact Us</a>
+            <a class="btn ghost" href="#brands">Our Brands</a>
+          </div>
+          <ul class="quick-stats">
+            <li><strong>Hygiene</strong><br><span>Graded &amp; packed</span></li>
+            <li><strong>Supply</strong><br><span>Retail &amp; bulk</span></li>
+            <li><strong>Testing</strong><br><span>FSSAI (D3)</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-media">
+          <!-- Use the no‑logo hero image you chose -->
+          <img src="images/hero.jpg" alt="White eggs in a tray on a wooden table" class="hero-img">
+          <div class="hero-badge">Fresh from farm to table</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRANDS -->
+    <section id="brands" class="section fade">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>Our Brands</h2>
+          <p class="muted">Two dedicated ranges to match different needs — household value and premium health-focused eggs.</p>
+        </div>
+
+        <div class="cards">
+          <!-- JUNAKI -->
+          <article class="card card-junaki" aria-labelledby="junaki-title">
+            <div class="card-media">
+              <img src="images/junaki.jpg" alt="Junaki eggs">
+            </div>
+            <div class="card-body">
+              <h3 id="junaki-title">JUNAKI</h3>
+              <p class="muted">Affordable, nutritious eggs with a naturally rich orange yolk — ideal for everyday use.</p>
+              <ul class="bullets">
+                <li>Budget friendly</li>
+                <li>Orange yolk</li>
+                <li>Consistent quality</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn small" href="#contact">Order JUNAKI</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- D3 -->
+          <article class="card card-d3" aria-labelledby="d3-title">
+            <div class="card-media">
+              <img src="images/d3.jpg" alt="D3 eggs">
+            </div>
+            <div class="card-body">
+              <h3 id="d3-title">D3</h3>
+              <p class="muted">Premium, chemical-free eggs handled under strict hygiene. <strong>FSSAI lab tested</strong> for safety and quality.</p>
+              <ul class="bullets">
+                <li>Chemical-free</li>
+                <li>FSSAI tested</li>
+                <li>Health focused</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn small ghost" href="#contact">Order D3</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section id="compare" class="section alt fade">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>Comparison</h2>
+          <p class="muted">Side-by-side features to help you pick the right product.</p>
+        </div>
+
+        <div class="compare-wrap">
+          <table class="compare-table" summary="Comparison of Junaki and D3 features">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>JUNAKI</th>
+                <th>D3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Positioning</td><td>Affordable</td><td>Premium</td></tr>
+              <tr><td>Yolk Color</td><td>Orange</td><td>Natural</td></tr>
+              <tr><td>Chemicals</td><td>Standard poultry practices</td><td><strong>Chemical-free</strong></td></tr>
+              <tr><td>Quality Check</td><td>Standard checks</td><td><strong>FSSAI Lab Tested</strong></td></tr>
+              <tr><td>Best For</td><td>Daily household use</td><td>Health-conscious buyers</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="section fade">
+      <div class="wrap">
+        <div class="section-header">
+          <h2>Why Choose Ali Whiz</h2>
+          <p class="muted">We combine hygiene, tested quality and reliable supply for retail and bulk clients.</p>
+        </div>
+
+        <div class="features">
+          <div class="feature">
+            <div class="f-icon">🏷️</div>
+            <div>
+              <strong>Hygiene First</strong>
+              <div class="muted">Sorted, graded and packed under controlled conditions.</div>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="f-icon">🔬</div>
+            <div>
+              <strong>Tested Quality</strong>
+              <div class="muted">FSSAI lab tests for premium range; routine checks for all batches.</div>
+            </div>
+          </div>
+
+          <div class="feature">
+            <div class="f-icon">🚚</div>
+            <div>
+              <strong>Reliable Supply</strong>
+              <div class="muted">Consistent quantities for retailers and bulk buyers.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section alt fade">
+      <div class="wrap contact-grid">
+        <div class="contact-card">
+          <h3>Get in touch</h3>
+          <p class="muted">For orders, distribution or bulk enquiries — contact us directly.</p>
+
+          <div class="contact-items">
+            <div><span class="label">Phone</span><div class="value">+91 9957687166 / 8638318125
+</div></div>
+            <div><span class="label">WhatsApp</span><div class="value"><a href="https://wa.me/919956787166" target="_blank" rel="noopener">Message us</a></div></div>
+            <div><span class="label">Email</span><div class="value"> junakieggs@aliwhiz.com <br/>Junakieggs@gmail.com</div></div>
+          </div>
+        </div>
+
+        <div class="map-card">
+          <div class="map-placeholder"><iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2558.463786135582!2d94.29918507365963!3d26.64649577148377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDM4JzQ3LjQiTiA5NMKwMTgnMDYuMyJF!5e1!3m2!1sen!2sin!4v1764758816658!5m2!1sen!2sin" width="95%" height="90%" border-radius:10px 
+      style="border:0;" loading="lazy" allowfullscreen=""
+      referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ <!-- WHATSAPP FLOAT -->
+<a class="whatsapp-float"
+   href="https://wa.me/919956787166"
+   target="_blank"
+   rel="noopener"
+   aria-label="WhatsApp">
+  <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="currentColor"
+      d="M12.04 2a9.8 9.8 0 00-8.44 14.7L2 22l5.48-1.56A9.8 9.8 0 1012.04 2zm0 1.6a8.2 8.2 0 016.9 12.7l-.2.3a8.2 8.2 0 01-11.4 1.5l-.3-.2-3.2.9.9-3.1-.2-.3A8.2 8.2 0 0112.04 3.6zm-3 4.1c-.16 0-.42.06-.65.33s-.85.82-.85 2c0 1.18.87 2.33 1 2.49.13.16 1.7 2.7 4.18 3.68 2.07.82 2.49.74 2.94.7.45-.04 1.45-.59 1.65-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.45-.28-.23-.12-1.37-.67-1.58-.74-.21-.08-.36-.12-.51.12-.15.24-.59.74-.73.89-.13.16-.27.18-.5.06-.23-.12-.97-.36-1.84-1.13-.68-.6-1.14-1.35-1.28-1.58-.13-.24-.01-.36.11-.48.12-.12.24-.27.36-.41.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.52-1.27-.72-1.72-.19-.45-.38-.46-.54-.47z" />
+  </svg>
+</a>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-left">
+      <img src="images/ali-whiz-logo.png.jpg" alt="Ali Whiz" class="footer-logo">
+      <span>© <span id="year"></span> Ali Whiz — All rights reserved.</span>
+    </div>
+    <div class="muted">
+      Made for Ali Whiz — JUNAKI &amp; D3 ·
+      <a href="https://rohanalom.github.io/" class="dev-credit">Site by Rohan Alom</a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
