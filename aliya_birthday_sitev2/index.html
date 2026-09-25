@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#24141c">
+<title>A Little Something For You ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+<div class="progress"><i id="progressBar"></i></div>
+<audio id="bgMusic" src="assets/audio/music.mp3" loop preload="none"></audio>
+<button id="prevBtn" class="prev-btn" aria-label="Back">←</button>
+
+<section class="page opening active">
+  <div class="heart-field" aria-hidden="true">
+    <span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+  </div>
+  <main class="content opening-content">
+    <div class="eyebrow">made especially for you</div>
+    <div class="sparkle">✦</div>
+    <h1>A little<br><em>something for you...</em></h1>
+    <p class="opening-copy">I could've just wished you<br><b>Happy Birthday.</b><br>But where's the fun in that?</p>
+    <div class="ornament">♡ ───── ♡ ───── ♡</div>
+    <button class="button primary next-opening">begin the surprise →</button>
+  </main>
+</section>
+
+<section class="page dark">
+<main class="content">
+<div class="eyebrow">first, a tiny secret</div>
+<h2>Before I let you in...</h2>
+<div class="unlock-card">
+<p>Complete this:</p>
+<div class="quote">"The person I call <b>______</b> is the one<br>who keeps threatening to say<br>'Tumak <b>______</b> hobo'."</div>
+<div class="fields"><input id="answer1" placeholder="first blank" autocomplete="off"><input id="answer2" placeholder="second blank" autocomplete="off"></div>
+<div id="error"></div>
+<button class="button" id="unlockButton">unlock my surprise →</button>
+</div>
+<small>You already know the answers.</small>
+</main>
+</section>
+
+<section class="page memory-start">
+<main class="content">
+<div class="date">25.01.2026</div>
+<h2>That's the day I first saw you.</h2>
+<p>A hill. Tea gardens growing around us.<br>And then, Kalakshetra.</p>
+<button class="button next">next →</button>
+</main>
+</section>
+
+<section class="page memory-start">
+<main class="content">
+<div class="date">16.02</div>
+<h2>That's the day I finally got it right.</h2>
+<p>The day I told you I loved you —<br>and meant every word.</p>
+<button class="button next">next →</button>
+</main>
+</section>
+
+<section class="page cream">
+<main class="content">
+<div class="eyebrow">a few little memories</div><h2>Our little archive</h2>
+<p class="hint">Swipe the cards ↔</p>
+<div class="polaroid-stage" id="polaroidStage"></div>
+<div class="controls"><button class="button small" id="prevPhoto">←</button><span id="photoCounter">1 / 1</span><button class="button small" id="nextPhoto">→</button></div>
+<button class="button next">next →</button>
+</main>
+</section>
+
+<section class="page balloon-page">
+<main class="content">
+<div class="eyebrow">a tiny game for you</div>
+<h2>Pop the balloons.</h2>
+<p>Each one has a little piece of a sentence.</p>
+<div class="balloon-area" id="balloonArea">
+<button class="balloon a" data-word="You"><span></span></button>
+<button class="balloon b" data-word="are"><span></span></button>
+<button class="balloon c" data-word="so"><span></span></button>
+<button class="balloon d" data-word="loved,"><span></span></button>
+<button class="balloon e" data-word="Aliya ❤️"><span></span></button>
+</div>
+<div class="popped-words" id="poppedWords"></div>
+<p id="balloonCounter">0 / 5 popped</p>
+<div id="balloonSentence" class="balloon-sentence"></div>
+<button class="button next" id="balloonNext" disabled>next →</button>
+</main>
+</section>
+
+<section class="page cream">
+<main class="content letter-page">
+<div class="eyebrow">a message from baba</div>
+<h2>I could write something incredibly romantic here...</h2>
+<p class="lead">but you already know what I'm actually going to say.</p>
+<div class="letter">Aliya,
+
+Happy Birthday, love.
+
+I keep trying to think of the perfect way to start this, and I keep landing on the same thought — that I'm the lucky one for getting to call you mine.
+
+Some days I still think about the 25th of January — that hill, the tea gardens, the walk to Kalakshetra. That's the day I first saw you.
+
+But if I'm honest, our story really starts on the 16th of February. That's the day I stopped overthinking and just told you the truth — that I loved you, and I wanted you.
+
+<em class="edit">[add what that day felt like for you — what you remember saying, or how nervous you were]</em>
+
+Since then you've become my favourite person to tell everything to, my favourite person to be quiet with, and — apparently — the one person I keep threatening with "tumak pita hobo" 😂
+
+<em class="edit">[add what that joke means to you two / why it stuck]</em>
+
+<em class="edit">[add what you love about her — a habit, her laugh, something specific]</em>
+
+<em class="edit">[add a hope or promise for the year ahead]</em>
+
+I hope this year gives you everything you deserve, and if it doesn't, I hope you let me be the one who makes up the difference.
+
+Happy Birthday, Aliya. I love you today, and I'll love you on every 25th of January after this one too.
+
+Always yours ❤️</div>
+<button class="button next">one more thing →</button>
+</main>
+</section>
+
+<section class="page gift-page">
+<main class="content">
+<div class="eyebrow">a little gift</div>
+<h2>There's something waiting for you.</h2>
+<p>Go on. Open it.</p>
+<button class="gift-button" id="giftButton" aria-label="Open gift">
+  <svg viewBox="0 0 100 90" width="110"><rect x="15" y="38" width="70" height="42" rx="4" fill="#e995a8"/>
+    <rect x="10" y="24" width="80" height="16" rx="4" fill="#f4c96b"/>
+    <rect x="42" y="24" width="16" height="56" fill="#fff" opacity=".85"/>
+    <rect x="10" y="27" width="80" height="8" fill="#fff" opacity=".85"/>
+    <path d="M50 24 C40 10 26 14 34 24 C26 14 40 4 50 12Z" fill="#f4c96b"/>
+    <path d="M50 24 C60 10 74 14 66 24 C74 14 60 4 50 12Z" fill="#f4c96b"/></svg>
+</button>
+<div id="bouquetReveal" class="hidden">
+<svg class="bouquet" viewBox="0 0 240 280" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="petalG" cx="35%" cy="85%" r="90%">
+      <stop offset="0%" stop-color="#fffdf8"/><stop offset="55%" stop-color="#f7ede0"/><stop offset="100%" stop-color="#e9dcc6"/>
+    </radialGradient>
+    <linearGradient id="leafG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9db888"/><stop offset="100%" stop-color="#4f7048"/>
+    </linearGradient>
+    <linearGradient id="stemG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8caf7e"/><stop offset="100%" stop-color="#5c7d52"/>
+    </linearGradient>
+    <linearGradient id="wrapG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#efe3c9"/><stop offset="100%" stop-color="#d8c6a3"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#stemG)" stroke-width="3.2" fill="none" stroke-linecap="round">
+    <path d="M120 268 L84 140"/><path d="M120 268 L120 122"/><path d="M120 268 L156 140"/>
+    <path d="M120 268 L58 165"/><path d="M120 268 L182 165"/>
+  </g>
+  <g fill="url(#leafG)">
+    <path d="M60 178 Q30 170 14 190 Q40 194 60 178Z"/>
+    <path d="M180 178 Q210 170 226 190 Q200 194 180 178Z"/>
+    <path d="M96 210 Q70 224 62 250 Q92 240 96 210Z"/>
+    <path d="M144 210 Q170 224 178 250 Q148 240 144 210Z"/>
+  </g>
+  <g id="lilies" stroke="#d8c6a3" stroke-width="1">
+    <g transform="translate(60 165)">
+      <g fill="url(#petalG)">
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(72)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(144)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(216)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(288)"/>
+      </g>
+      <g stroke="#b3763f" stroke-width="2.4" stroke-linecap="round">
+        <path d="M0 0 L-6 -22"/><path d="M0 0 L0 -25"/><path d="M0 0 L6 -22"/>
+      </g>
+      <circle r="3.6" fill="#8a5a2e"/>
+    </g>
+    <g transform="translate(120 122) scale(1.18)">
+      <g fill="url(#petalG)">
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(72)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(144)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(216)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(288)"/>
+      </g>
+      <g stroke="#b3763f" stroke-width="2.4" stroke-linecap="round">
+        <path d="M0 0 L-6 -22"/><path d="M0 0 L0 -25"/><path d="M0 0 L6 -22"/>
+      </g>
+      <circle r="4" fill="#8a5a2e"/>
+    </g>
+    <g transform="translate(160 165)">
+      <g fill="url(#petalG)">
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(72)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(144)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(216)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(288)"/>
+      </g>
+      <g stroke="#b3763f" stroke-width="2.4" stroke-linecap="round">
+        <path d="M0 0 L-6 -22"/><path d="M0 0 L0 -25"/><path d="M0 0 L6 -22"/>
+      </g>
+      <circle r="3.6" fill="#8a5a2e"/>
+    </g>
+    <g transform="translate(86 142) scale(.92) rotate(-8)">
+      <g fill="url(#petalG)">
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(72)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(144)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(216)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(288)"/>
+      </g>
+      <g stroke="#b3763f" stroke-width="2.4" stroke-linecap="round">
+        <path d="M0 0 L-6 -22"/><path d="M0 0 L0 -25"/><path d="M0 0 L6 -22"/>
+      </g>
+      <circle r="3.6" fill="#8a5a2e"/>
+    </g>
+    <g transform="translate(154 142) scale(.92) rotate(8)">
+      <g fill="url(#petalG)">
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(72)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(144)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(216)"/>
+        <path d="M0 0 C-16 -20 -11 -47 0 -52 C11 -47 16 -20 0 0Z" transform="rotate(288)"/>
+      </g>
+      <g stroke="#b3763f" stroke-width="2.4" stroke-linecap="round">
+        <path d="M0 0 L-6 -22"/><path d="M0 0 L0 -25"/><path d="M0 0 L6 -22"/>
+      </g>
+      <circle r="3.6" fill="#8a5a2e"/>
+    </g>
+  </g>
+  <path d="M78 258 L162 258 L182 278 L58 278 Z" fill="url(#wrapG)"/>
+  <path d="M120 250 C96 259 100 273 120 270 C140 273 144 259 120 250Z" fill="#e995a8"/>
+</svg>
+<p class="bouquet-caption">Here is your favourite<br><b>white lily bouquet.</b></p>
+<p id="pitaLine" class="hidden-line"><b>Tumak pita hobo.</b> ♡</p>
+</div>
+<button class="button next" id="giftNext" disabled>next →</button>
+</main>
+</section>
+
+<section class="page final-page">
+<div class="heart-field final-hearts" aria-hidden="true"><span>♥</span><span>♡</span><span>♥</span><span>♡</span></div>
+<main class="content">
+<div class="eyebrow">for you</div>
+<h1>Happy Birthday,<br><em>Aliya.</em></h1>
+<p>I'm glad I first saw you on<br><b>25 January 2026.</b></p>
+<p>And even gladder I finally told you<br>the truth on <b>16 February.</b></p>
+<p>This isn't where our story ends.</p>
+<div class="ornament">♡ ───── ♡</div>
+<p class="signature">— Baba ♡</p>
+<div class="end-controls">
+  <button class="button small" id="playAgain">play again ↻</button>
+  <button class="button small ghost" id="exitBtn">exit ✕</button>
+</div>
+</main>
+</section>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
